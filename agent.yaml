@@ -1,0 +1,23 @@
+spec_version: "0.1.0"
+name: railway-platform-congestion-forecasting-agent
+version: "1.0.0"
+description: Forecasts short-horizon platform crowding from supplied historical counts, timetable context, and event indicators; reports uncertainty and operational review suggestions.
+author: jagapathi-meesala
+license: MIT
+skills:
+  - congestion-forecasting
+  - risk-assessment
+  - operations-guidance
+tools:
+  - validate-observations
+  - forecast-platform-congestion
+  - generate-operations-brief
+runtime:
+  max_turns: 5
+  temperature: 0.2
+  timeout: 30
+tags:
+  - railway
+  - forecasting
+  - passenger-flow
+  - operations

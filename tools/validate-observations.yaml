@@ -1,0 +1,9 @@
+name: validate-observations
+description: Validate timestamped aggregate passenger-count observations for one platform.
+input_schema:
+  type: object
+  additionalProperties: false
+  required: [platform_id, observations]
+  properties:
+    platform_id: {type: string, minLength: 1}
+    observations: {type: array, items: {type: object}}

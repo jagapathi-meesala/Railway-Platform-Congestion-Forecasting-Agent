@@ -1,0 +1,32 @@
+{
+  "agent": "railway-platform-congestion-forecasting-agent",
+  "platform_id": "P2",
+  "horizon_minutes": 15,
+  "estimated_passengers": 566.5,
+  "capacity_threshold": 800.0,
+  "threshold_ratio": 0.708,
+  "congestion_band": "moderate",
+  "confidence": "low",
+  "method": "recency-weighted mean of supplied observations multiplied by optional operator-supplied uplift_factor",
+  "evidence": {
+    "valid_observation_count": 4,
+    "observation_timestamps": [
+      "2026-10-14T17:00:00+05:30",
+      "2026-10-14T17:05:00+05:30",
+      "2026-10-14T17:10:00+05:30",
+      "2026-10-14T17:15:00+05:30"
+    ],
+    "validation_findings": [],
+    "uplift_factor": 1.1
+  },
+  "advisory_suggestions": [
+    "Increase monitoring frequency and check upcoming arrivals or known events.",
+    "Treat this estimate cautiously because observations are sparse or stale."
+  ],
+  "limitations": [
+    "Heuristic baseline, not a trained or calibrated forecast",
+    "No live timetable, sensor, CCTV, or railway-system connection",
+    "Threshold is operator-supplied and must be validated locally",
+    "Not for autonomous safety-critical decisions"
+  ]
+}

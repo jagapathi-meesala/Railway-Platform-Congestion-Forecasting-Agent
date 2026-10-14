@@ -1,0 +1,9 @@
+name: generate-operations-brief
+description: Summarize forecast evidence and advisory checks for human station staff.
+input_schema:
+  type: object
+  additionalProperties: false
+  required: [forecast_result]
+  properties:
+    forecast_result: {type: object}
+    operator_notes: {type: string}

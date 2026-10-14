@@ -1,0 +1,12 @@
+name: forecast-platform-congestion
+description: Produce a transparent heuristic short-horizon platform crowding estimate.
+input_schema:
+  type: object
+  additionalProperties: false
+  required: [platform_id, capacity_threshold, observations]
+  properties:
+    platform_id: {type: string, minLength: 1}
+    capacity_threshold: {type: number, exclusiveMinimum: 0}
+    horizon_minutes: {type: integer, minimum: 1}
+    uplift_factor: {type: number, minimum: 0}
+    observations: {type: array, items: {type: object}}

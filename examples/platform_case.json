@@ -1,0 +1,12 @@
+{
+  "platform_id": "P2",
+  "capacity_threshold": 800,
+  "horizon_minutes": 15,
+  "uplift_factor": 1.1,
+  "observations": [
+    {"timestamp": "2026-10-14T17:00:00+05:30", "platform_id": "P2", "passenger_count": 380},
+    {"timestamp": "2026-10-14T17:05:00+05:30", "platform_id": "P2", "passenger_count": 440},
+    {"timestamp": "2026-10-14T17:10:00+05:30", "platform_id": "P2", "passenger_count": 510},
+    {"timestamp": "2026-10-14T17:15:00+05:30", "platform_id": "P2", "passenger_count": 590}
+  ]
+}
